@@ -6,6 +6,7 @@
 #include <map>
 #include "records.h"
 // #include "res/headers.h"
+#include "res/CoolerStdLib11.h"
 
 // #include "res/CoolerStdLib11.h"
 
@@ -22,7 +23,11 @@ enum TYPES {
 };
 
 std::vector<std::string> find_csv_files(const std::string& fodler_path);
+
 std::map<std::string, std::vector<std::string>> read_csv_file(const std::string& filePath);
+
+void build_csv_data_map(const std::vector<std::vector<std::string>>& lines, std::map<std::string, std::vector<std::string>>& data_map);
+
 std::vector<std::string> parse_csv_line(const std::string& line);
 
 template <class T>
@@ -39,15 +44,16 @@ class CoolerTable {
         void _populate_adiab_records(std::map<std::string, std::vector<std::string>>& m);
         void _populate_cooler_records(std::map<std::string, std::vector<std::string>>& m);
     public:
+        CoolerTable(); // Loads standard library
         CoolerTable(const std::string &filepath); // constructor to import a file
         FanRecord* get_fan_record(const std::string model);
         HERecord* get_he_record(const std::string model);
         AdiabRecord* get_adiab_record(const std::string model);
         CoolerRecord* get_cooler_record(const std::string model);
+        void get_fan_record_list();
 };
 
 class CoolerLibrary {
-    #include "res/CoolerStdLib11.h"
     private:
         std::map<std::string, FanRecord> _fan_records;
         std::map<std::string, HERecord> _he_records;
