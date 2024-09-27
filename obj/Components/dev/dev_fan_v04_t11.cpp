@@ -15,13 +15,19 @@ namespace fs = std::filesystem;
 
 
 int main() { 
-    fs::path path="../../Libraries/res";
+    fs::path path="../../Libraries/res/csv";
     fs::path current = fs::current_path();
     fs::path abs_path = current / path;
     // fs::path abs_path = fs::absolute(path);
     cout << abs_path << endl;
 
     CoolerTable table (abs_path.string());
+
+    table.get_fan_record_list();
+
+    FanRecord* fan_rec = table.get_fan_record("EBM_A3G800-AY21-71");
+
+    
 
     return 0;
 }
