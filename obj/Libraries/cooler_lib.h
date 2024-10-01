@@ -8,31 +8,12 @@
 #include "res/headers.h"
 #include "res/CoolerStdLib11.h"
 #include "../../tls/tls_csv_utils.h"
-
-
-// #include "res/CoolerStdLib11.h"
+#include "../../tls/tls_display.h" // DEBUG: for debugging purposes only
 
 const std::string FAN_FILENAME = "FAN";
-const std::string COOLER_FILENAME = "ECODRY";
+const std::string COOLER_FILENAME = "ECODRY";   
 const std::string HE_FILENAME = "HE";
 const std::string ADIAB_FILENAME = "ADIAB";
-
-// enum TYPES {
-//     STR,
-//     INT,
-//     FLOAT,
-// };
-
-// std::vector<std::string> find_csv_files(const std::string& fodler_path);
-
-// std::map<std::string, std::vector<std::string>> read_csv_file(const std::string& filePath);
-
-// void build_csv_data_map(const std::vector<std::vector<std::string>>& lines, std::map<std::string, std::vector<std::string>>& data_map);
-
-// std::vector<std::string> parse_csv_line(const std::string& line);
-
-// template <class T>
-// std::vector<T> convert_vector(std::map<std::string, std::vector<std::string>> &m, std::string key, int index, TYPES to_type);
 
 class CoolerTable {
     private:

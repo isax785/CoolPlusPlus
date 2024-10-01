@@ -1,16 +1,11 @@
-#ifndef HEADERS_H
-#define HEADERS_H
+#include "headers.h"
 
-#include <string>
-#include <vector>
-#include <map>
-
-const std::map<std::string, std::vector<std::string>> MAP_FAN ={
+std::map<std::string, std::vector<std::string>> MAP_FAN ={
         {"ID", {"ID"}},
         {"MODEL", {"MODEL"}},
         {"RPM", {"RPM_1", "RPM_5", "RPM_9", "RPM_13"}},
         {"POW", {"POW_1", "POW_2", "POW_3", "POW_4", "POW_5", "POW_6", "POW_7", "POW_8", "POW_9", "POW_10", "POW_11", "POW_12", "POW_13", "POW_14", "POW_15", "POW_16"}},
-        {"PORT", {"PORT_1", "PORT_2", "PORT_3", "PORT_4", "PORT_5", "PORT_6", "PORT_7", "PORT_8", "PORT_9", "PORT_10", "PORT_11", "PORT_     12", "PORT_13", "PORT_14", "PORT_15", "PORT_16"}},
+        {"PORT", {"PORT_1", "PORT_2", "PORT_3", "PORT_4", "PORT_5", "PORT_6", "PORT_7", "PORT_8", "PORT_9", "PORT_10", "PORT_11", "PORT_12", "PORT_13", "PORT_14", "PORT_15", "PORT_16"}},
         {"DP", {"DP_1", "DP_2", "DP_3", "DP_4", "DP_5", "DP_6", "DP_7", "DP_8", "DP_9", "DP_10", "DP_11", "DP_12", "DP_13", "DP_14", "DP_15", "DP_16"}},
         {"LW0", {"LW"}},
         {"LW", {"LW_1", "LW_2", "LW_3", "LW_4", "LW_5", "LW_6", "LW_7", "LW_8", "LW_9", "LW_10", "LW_11", "LW_12", "LW_13", "LW_14", "LW_15", "LW_16"}},
@@ -33,7 +28,7 @@ const std::map<std::string, std::vector<std::string>> MAP_FAN ={
         {"MOTOR COAT", {"MOTOR COATINGS"}},
 };
 
-const std::map<std::string, std::vector<std::string>> MAP_HE ={
+std::map<std::string, std::vector<std::string>> MAP_HE ={
         {"ID", {"ID"}},
         {"MODEL", {"MODEL"}},
         {"COIL TYPE", {"COIL TYPE"}},
@@ -80,7 +75,7 @@ const std::map<std::string, std::vector<std::string>> MAP_HE ={
         {"COATING MATERIAL", {"COATING MATERIAL"}},
 };
 
-const std::map<std::string, std::vector<std::string>> MAP_COOLER ={
+std::map<std::string, std::vector<std::string>> MAP_COOLER ={
         {"ID", {"ID"}},
         {"MODEL", {"MODEL"}},
         {"CONFIG.", {"CONFIG."}},
@@ -143,11 +138,9 @@ const std::map<std::string, std::vector<std::string>> MAP_COOLER ={
         {"SYSTEM HANDRAILS", {"SYSTEM HANDRAILS"}},
 };
 
-const std::map<std::string, std::vector<std::string>> MAP_ADIAB ={
+std::map<std::string, std::vector<std::string>> MAP_ADIAB ={
         {"ID", {"ID"}},
         {"MODEL", {"MODEL"}},
         {"C1", {"COEFF_1"}},
         {"C2", {"COEFF_2"}},
 };
-
-#endif // HEADERS_H
