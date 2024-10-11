@@ -94,7 +94,6 @@ class Fan:
                         self.lw_loss[k][i] = lw_i
                         self.cur_loss[k][i] = cur_i
                         
-    
     def _inters_new_u(self, u_rpm_i, dp_rpm_i, kv):
         """
         Find u and dp with a fixed kv in the curve u_rpm_i - dp_rpm_i

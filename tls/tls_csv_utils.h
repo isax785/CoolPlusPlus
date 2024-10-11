@@ -16,7 +16,7 @@ enum TYPES {
     FLOAT,
 };
 
-extern std::vector<std::string> parse_csv_line(const std::string& line); // parses a CSV line with `;` separator
+std::vector<std::string> parse_csv_line(const std::string& line); // parses a CSV line with `;` separator
 
 std::vector<std::string> find_csv_files(const std::string& folder_path); // scans a folder and find all CSV files
 
