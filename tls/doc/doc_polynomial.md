@@ -153,10 +153,10 @@ All sums range over i = 1, 2, ..., n.
 Using notation `Sjk` to mean the sum of `x_i^j*y_i^k`:
 
 ```
-a*S60 + b*S50 + c*S40 = S31
-a*S50 + b*S40 + c*S30 = S21
-a*S40 + b*S30 + c*S20 = S11
-a*S30 + b*S20 + c*S10 = S01
+a*S60 + b*S50 + c*S40 + d*S30 = S31
+a*S50 + b*S40 + c*S30 + d*S20 = S21
+a*S40 + b*S30 + c*S20 + d*S10 = S11
+a*S30 + b*S20 + c*S10 + d*S00 = S01
 ```
 
 Solve the simultaneous equations using Cramer's law:
@@ -167,10 +167,10 @@ Solve the simultaneous equations using Cramer's law:
 | S40  S30  S20 | | c | = | S11 |
 | S30  S20  S10 | | d | = | S01 |
 
-D = | S60  S50  S40 |
-    | S50  S40  S30 |
-    | S40  S30  S20 |
-    | S30  S20  S10 |
+D = | S60  S50  S40  S30 |
+    | S50  S40  S30  S20 |
+    | S40  S30  S20  S10 |
+    | S30  S20  S10  S00 |
 
     = ???
 

@@ -4,3 +4,6 @@
 *.a
 
 /scraps
+
+# tls
+tls/dev/*.txt
