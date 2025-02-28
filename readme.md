@@ -11,14 +11,16 @@
 
 # Project Overview
 
-- `/tls`: tools for general usage, mainly for development purposes (e.g. vector printout, map printout). Files `.h` to be included into each script (`.cpp`) [^1].
-  - `/tls_display.h`
+- `/doc`: documentation and notes
 - `/obj`: 
   - `/Components`
   - `/Libraries`
   - `/Machines`
 - `/res`: 
 - `/src`: 
+- `/tls`: tools for general usage, mainly for development purposes (e.g. vector printout, map printout). Files `.h` to be included into each script (`.cpp`) [^1].
+  - `/dev`: development of tools;
+  - `/tls_display.h`
 
 [^1]: `.h` files includ both declarations and definitions. This ease writing the compiling instruction for the `.cpp` that imports them.
 
