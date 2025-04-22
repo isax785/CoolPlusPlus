@@ -3,6 +3,7 @@
 #include <filesystem>
 
 #include "../../Libraries/cooler_lib.h"
+#include "../fan_v04_t11.h"
 
 using namespace std;
 namespace fs = std::filesystem;
@@ -15,7 +16,7 @@ namespace fs = std::filesystem;
 
 
 int main() { 
-    fs::path path="../../Libraries/res/csv";
+    fs::path path="../../Libraries/dev/csv";
     fs::path current = fs::current_path();
     fs::path abs_path = current / path;
     // fs::path abs_path = fs::absolute(path);
@@ -26,8 +27,8 @@ int main() {
     table.get_fan_record_list();
 
     FanRecord* fan_rec = table.get_fan_record("EBM_A3G800-AY21-71");
-
-    
+    cout << typeid(fan_rec).name() << endl;
+    Fan ebm_fan(fan_rec);
 
     return 0;
 }
