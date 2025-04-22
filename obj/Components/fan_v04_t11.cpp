@@ -9,7 +9,6 @@ void Fan::_perf_pow()
 {
 }
 
-
 void Fan::new_curve()
 {
 }

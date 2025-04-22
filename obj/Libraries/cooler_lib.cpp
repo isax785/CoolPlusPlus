@@ -87,10 +87,7 @@ void CoolerTable::_populate_fan_records(std::map<std::string, std::vector<std::s
         std::vector<float> n_rpm = convert_vector<float>(m, "RPM", i, FLOAT, MAP_FAN["RPM"]);
         std::vector<float> pow = convert_vector<float>(m, "POW", i, FLOAT, MAP_FAN["POW"]);
         std::vector<float> flow = convert_vector<float>(m, "PORT", i, FLOAT, MAP_FAN["PORT"]);
-        std::cout << "Here" << std::endl; // DEBUG
         std::vector<float> dp = convert_vector<float>(m, "DP", i, FLOAT, MAP_FAN["DP"]);
-        // std::cout << std::endl << "Here! " << m["MODEL"][i] << std::endl; // DEBUG
-        // std::cout << m[MAP_FAN["LW0"][0]][0] << std::endl; // DEBUG`
         std::string lw0 = m[MAP_FAN["LW0"][0]][0];
 
         std::vector<float> lw = convert_vector<float>(m, "LW", i, FLOAT, MAP_FAN["LW"]);

@@ -8,43 +8,43 @@
 
 ---
 
-The **Tools** are geenral purpose functions/classes to be used (mainly for debugging purposes) for the development of the various classes or functions.
+The **Tools** are general purpose functions/classes to be used (mainly for debugging purposes) for the development of the various classes or functions.
 
-All the tools are implemented into `.h` files in order to ease the compilation process of the scripts/projects into which they are included.
+✅ All the tools are implemented into `.h` files in order to ease the compilation process of the scripts/projects into which they are included.
 
 # Display
 
 Functions to display (i.e. printout) data structures of mid/high complexity.
 
-All the function definitions are included into the headers (i.e. `.h`) file are templated funcitons, in order to run with any type of content (compatible with the `<<` operator):
+All the function definitions are included into the headers (i.e. `.h`). All the functions are templated functions to run with any type of content (compatible with the `<<` operator):
 
-- `display_vector`: the content of a vector;
-- `display_map_content`: printout of a map content, all the key-value pairs. Two declarations depending on the value:
+- `display_vector`: printout the content of a vector;
+- `display_map_content`: printout of a map content, all the key-value pairs. There are two declarations depending on the value:
   1. simple value: single variable;
   2. vector value: array.
-- `display_map_keys`: all the keys of a map.
+- `display_map_keys`: printout all the keys of a map.
 
 Declarations:
 
 ```cpp
-// vector printout
-template<class T> void display_vector(std::vector<T>& vec) {...};
+    // vector printout
+    template<class T> void display_vector(std::vector<T>& vec) {...};
 
-// map printout, items are vectors
-template<class T, class S> void display_map_content(std::map<T, std::vector<S>>& m) {...};
+    // map printout, items are vectors
+    template<class T, class S> void display_map_content(std::map<T, std::vector<S>>& m) {...};
 
-// map printout, items (i.e. second) are simple elements (e.g. string, int, ...)
-template<class T, class S> void display_map_content(std::map<T, S>& m) {...};
+    // map printout, items (i.e. second) are simple elements (e.g. string, int, ...)
+    template<class T, class S> void display_map_content(std::map<T, S>& m) {...};
 
-// mpa keys (i.e. first) printout
-template<class T, class S> void display_map_keys(std::map<T, std::vector<S>>& m) {...};
+    // mpa keys (i.e. first) printout
+    template<class T, class S> void display_map_keys(std::map<T, std::vector<S>>& m) {...};
 ```
 
 # CSV Utilities
 
 Functions to read and import the content of a CSV file:
 
-- `parse_csv_line`: parsing of a line of the CSV, splitting the content on `;`;
+- `parse_csv_line`: parsing a line of the CSV, splitting the content on `;`;
 - `find_csv_file`: find the list of all the CSV files contained into a folder;
 - `build_csv_data_map`: build the data map with the CSV content;
 - `read_csv_file`: read a CSV file;
@@ -53,11 +53,11 @@ Functions to read and import the content of a CSV file:
 Also the `enum` to handle the conversion is declared in `.h`:
 
 ```cpp
-enum TYPES {
-    STR,
-    INT,
-    FLOAT,
-};
+    enum TYPES {
+        STR,
+        INT,
+        FLOAT,
+    };
 ```
 
 All the functions are declared in `.h` and defined into the corresponding `.cpp` file.

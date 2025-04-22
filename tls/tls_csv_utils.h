@@ -25,7 +25,8 @@ void build_csv_data_map(const std::vector<std::vector<std::string>>& lines_vecto
 std::map<std::string, std::vector<std::string>> read_csv_file(const std::string& filePath);
 
 template <typename T>
-std::vector<T> convert_vector(std::map<std::string, std::vector<std::string>> &m, 
+std::vector<T> convert_vector(std::map<std::string, 
+                              std::vector<std::string>> &m, 
                               std::string key, 
                               int index, 
                               TYPES to_type,

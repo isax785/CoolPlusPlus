@@ -9,7 +9,7 @@
 
 ---
 
-Overview of the `Table`s classes and `Library`s classes implementations. 
+Overview of the `Table` classes and `Library` classes implementations. 
 
 Here are reported all the `Table`/`Library` classes without any reference to a specific machine. 
 

@@ -4,8 +4,6 @@
 #include <string>
 #include "../Libraries/records.h"
 
-using namespace std;
-
 class Fan {
     private:
         FanRecord const _fan_record;

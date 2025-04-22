@@ -1,12 +1,11 @@
 #include <iostream>
-// #include <vector>
 #include <string>
 // #include <map>
 // #include "../res/CoolerStdLib11.h"
 // #include "../res/headers.h"
 #include "../cooler_lib.h"
 // #include "../records.h"
-// #include "../../../tls/tls_display.h"
+#include "../../../tls/tls_display.h"
 // #include "../../../tls/tls_csv_utils.h"
 
 using namespace std;
@@ -19,7 +18,7 @@ int main() {
 
     // ======= read first csv
     map<string, vector<string>> csv_content = read_csv_file(files[0]);
-    // display_map_content(csv_content); // DEBUG
+    display_map_content(csv_content); // DEBUG
 
     // ======= instantiate STD Table
     CoolerTable* table_std = new CoolerTable();

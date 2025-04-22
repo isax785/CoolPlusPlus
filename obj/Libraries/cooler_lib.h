@@ -8,10 +8,10 @@
 #include "res/headers.h"
 #include "res/CoolerStdLib11.h"
 #include "../../tls/tls_csv_utils.h"
-#include "../../tls/tls_display.h" // DEBUG: for debugging purposes only
+// #include "../../tls/tls_display.h" // DEBUG: for debugging purposes only
 
 const std::string FAN_FILENAME = "FAN";
-const std::string COOLER_FILENAME = "ECODRY";   
+const std::string COOLER_FILENAME = "COOLER";   
 const std::string HE_FILENAME = "HE";
 const std::string ADIAB_FILENAME = "ADIAB";
 
