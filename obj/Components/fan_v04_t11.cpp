@@ -1,6 +1,6 @@
 #include "fan_v04_t11.h"
 
-using namespace std;
+using namespace std;  
 
 // Fan::Fan(const FanRecord& fan_record) : _fan_record(fan_record) {}
 Fan::Fan(FanRecord* fan_record) : _fan_record(fan_record) {}

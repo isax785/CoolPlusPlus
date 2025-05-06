@@ -28,7 +28,7 @@ int main() {
 
     FanRecord* fan_rec = table.get_fan_record("EBM_A3G800-AY21-71");
     cout << typeid(fan_rec).name() << endl;
-    Fan ebm_fan(fan_rec);
+    // Fan ebm_fan(fan_rec);
 
     return 0;
 }

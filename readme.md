@@ -36,3 +36,5 @@
 - **Machines**
 - **Tools**
   - [DOC - Tools](./tls/doc/doc_tools.md): tools for development purposes.
+  - [DEV - Polynomial (PyNtb)](./tls/dev/dev_polynomial.ipynb): 
+  - [DEV - Polynomial ]

@@ -1,3 +1,6 @@
+#ifndef FAN_V04_T11_h
+#define FAN_V04_T11_h
+
 #include <tuple>
 #include <map>
 #include <vector>
@@ -20,3 +23,5 @@ class Fan {
         void new_curve();
         void perf(); // input:settings ??
 };
+
+#endif // FAN_V04_T11_h
