@@ -6,6 +6,7 @@
 // ===========================================================================
 
 CoolerTable::CoolerTable() {
+    // TODO: complete import of all the components
     std::vector<std::vector<std::string>> lines_fan_parsed;
     for (int i=0; i<FAN_STD_CSV_LINES.size(); i++) {
         lines_fan_parsed.push_back(parse_csv_line(FAN_STD_CSV_LINES[i]));
@@ -18,6 +19,8 @@ CoolerTable::CoolerTable() {
 }
 
 CoolerTable::CoolerTable(const std::string& filepath) {
+    // import the csv files contained into a directory
+    // the filenames contain the _FILENAME string
     std::vector<std::string> files = find_csv_files(filepath);
     std::map<std::string, std::vector<std::string>> csv_content;
     // display_vector(files); // DEBUG
